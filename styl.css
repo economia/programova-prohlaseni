@@ -1,0 +1,51 @@
+html, body {
+	margin: 0px;
+	padding: 0px
+}
+
+ol {
+	margin-top: 10px;
+	padding-left: 30px;
+	font-family: sans-serif;
+	font-size: 12px;
+	font-variant: small-caps;
+	font-weight: bold;
+}
+
+a {
+	color:black;
+}
+
+.prohlaseni {
+	width: 138px;
+	height: 265px;
+	float: left;
+	border-bottom: 2px solid #E5E4E2;
+}
+
+div.prohlaseni:hover {
+		background-color: #E5E4E2;
+}
+
+
+.premier	{
+	font-family: sans-serif;
+	font-size: 13px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+
+.kolecko {
+	background-color: skyblue;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+}
+
+.kontejner {
+	width: 138px;
+	height: 138px;
+	position: relative;
+}
+

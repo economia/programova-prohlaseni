@@ -1,0 +1,16 @@
+{
+    "contents" : "html  <- function() {\n  soubor  <- file(\"prohlaseni.html\", \"a\")\n  for(i in 1:nrow(vysledky)) {\n    writeLines(paste('<a href=\"',\n                     as.character(vysledky$V9[i]),\n                     '\" target=\"_blank\"><div class=\"prohlaseni\" title=\"Celkem ',\n                     as.character(vysledky$V6[i]),\n                     ' slov. Kliknutím otevřete v nové záložce kompletní programové prohlášení.\"><h3 class=\"premier\">',\n                     as.character(vysledky$V1[i]),\n                     '<br>',\n                     as.character(vysledky$V2[i]),\n                     '</h3><div class=\"kontejner\"><div class=\"kolecko\" style=\"width:',\n                     as.character(vysledky$V7[i]),\n                     'px;height:',\n                     as.character(vysledky$V7[i]),\n                     'px;margin-left:-',\n                     as.character(vysledky$V7[i]/2),\n                     'px;margin-top:-',\n                     as.character(vysledky$V7[i]/2),\n                     'px\"></div></div><ol><li>',\n                     as.character(vysledky$V3[i]),\n                     '</li><li>',\n                     as.character(vysledky$V4[i]),\n                     '</li><li>',\n                     as.character(vysledky$V5[i]),\n                     '</li></ol></div></a>',\n                     sep=\"\"), soubor)    \n  }\n  close(soubor)\n}",
+    "created" : 1375855659935.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4283439828",
+    "id" : "2E3238D5",
+    "lastKnownWriteTime" : 1375857080,
+    "path" : "~/Dropbox/code/programova-prohlaseni/html.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : true,
+    "type" : "r_source"
+}

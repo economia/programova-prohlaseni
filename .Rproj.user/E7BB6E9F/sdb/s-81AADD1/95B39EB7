@@ -1,0 +1,16 @@
+{
+    "contents" : "for(i in 1:length(as.character(prohlaseni$V1))) {\n  download.file(as.character(prohlaseni$V1)[i],paste(\"pdf/\",prohlaseni$V2[i], \" \",prohlaseni$V3[i],\".pdf\",sep=\"\"))\n}",
+    "created" : 1375704353242.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2713279977",
+    "id" : "95B39EB7",
+    "lastKnownWriteTime" : 1375713707,
+    "path" : "~/Dropbox/code/programova-prohlaseni/getpdf.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : false,
+    "type" : "r_source"
+}

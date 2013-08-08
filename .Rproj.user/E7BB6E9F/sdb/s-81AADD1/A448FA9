@@ -1,0 +1,16 @@
+{
+    "contents" : "lemm  <- function() {\n  library(rjson)\n\n    for(i in 44:length(list.files(\"txt\"))) {\n      projev  <- readLines(paste(\"txt/\", list.files(\"txt\")[i], sep=\"\"))\n      soubor  <- file(paste(\"lemm/\", list.files(\"txt\")[i], sep = \"\"), \"a\")\n      \n        for (j in 1:length(projev)) {\n          url  <- paste(\"http://cslemm.weps.cz/?text=\", URLencode(projev[j]), \"&all=true\", sep = \"\")\n          lemma  <- fromJSON(file = url)\n          writeLines(as.character(lemma$result), soubor)    \n        }\n     \n      close(soubor)\n      \n    }\n  }\n\n",
+    "created" : 1375717527882.000,
+    "dirty" : true,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "31353003",
+    "id" : "A448FA9",
+    "lastKnownWriteTime" : 1375798871,
+    "path" : "~/Dropbox/code/programova-prohlaseni/lemm.R",
+    "properties" : {
+        "tempName" : "Untitled1"
+    },
+    "source_on_save" : true,
+    "type" : "r_source"
+}
